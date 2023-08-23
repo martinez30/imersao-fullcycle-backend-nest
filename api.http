@@ -1,0 +1,20 @@
+GET http://localhost:3000
+
+###
+GET http://localhost:3000/routes
+
+###
+GET http://localhost:3000/routes/1
+
+###
+POST http://localhost:3000/routes
+Content-Type: application/json
+
+{
+  "name": "Teste",
+  "source_id": "Source",
+  "destination_id": "Destination"
+}
+
+###
+GET http://localhost:3000/places?text=rua alzira marcondes, campinas, 160
